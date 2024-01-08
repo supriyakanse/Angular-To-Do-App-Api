@@ -1,0 +1,11 @@
+const mongoose=require('mongoose')
+const registerSchema=mongoose.Schema({
+    firstname:String,
+    lastname:String,
+    mobileno:Number,
+    email:String,
+    dob:Date,
+    gender:String,
+    password:String
+})
+module.exports=mongoose.model("Register",registerSchema);
